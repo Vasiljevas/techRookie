@@ -25,7 +25,9 @@ function Grid({xLocation, yLocation, direction}) {
         <div>
             {matrix.map((x, y)=> {
                 if(x === xLocation && y === yLocation) return returnPic(direction);
-                return '0';
+                return (
+                    <div>0</div>
+                );
             })}
         </div>
     );
